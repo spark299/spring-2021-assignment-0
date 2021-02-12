@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-9">
+</head>
+<link rel="shortcut icon" href="#">
+<style>
+    body {
+        font-family : Arial, Helvetica, sans-serif;
+    }
+    #config{
+        position:absolute;
+        left: 10px;
+        top: 10px;
+        width: 30%;
+        background-color: #5CDB95;
+        color:  #05386B;
+        border-style:dotted;
+        border-color: #379683;
+        border-width: 3px;
+        text-align: center;
+    }
+    #glcanvas{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height:100%;
+    }
+</style>
+<body>
+    <script src="gl.js" type="module"></script>
+    <canvas id="glcanvas"></canvas>
+    <div id="config">
+        <table>
+            <tr>
+                <td>Red</td>
+                <td><input id="sliderR" type="range" min="0" max="255" value="0" oninput="window.updateColor()" ></input></td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td><input id="sliderG" type="range" min="0" max="255" value="0" oninput="window.updateColor()" ></input></td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td><input id="sliderB" type="range" min="0" max="255" value="0" oninput="window.updateColor()" ></input></td>
+            </tr>
+            <tr>
+                <td>Alpha</td>
+                <td><input id="sliderA" type="range" min="0" max="255" value="0" oninput="window.updateColor()" ></input></td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td><input id="sliderN" type="range" min="0" max="1" value="0" oninput="window.updateTriangles()"></input></td>
+            </tr>
+            <tr>
+                <td>JSON input</td>
+                <td><input id="fileInput" type="file" accept="application/JSON" onchange="window.openFile(event)"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="toggleBox" type="checkbox" oninput="window.toggle()"> <label for="toggleBox">Toggle to use File configurtion for color</label>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+
+</html>
