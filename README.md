@@ -3,6 +3,22 @@
 ## Assignment 0: Introduction to JavaScript and WebGL
 The goal of this first assignment is to get you familiar with JavaScript, WebGL calls, development environment, and the assignment submission process. You will develop a web application to render triangles with vertex position and colors defined in an external JSON file, specified by the user through a configuration panel.
 
+### Elements of HTML pages
+
+#### Four sliders that each corresponds to R,G,B,A of color values
+
+#### One slider that corresponds to the number of triangles rendered, in which the maximum is updated with the file input
+
+#### A file input element that lets user to upload JSON file with specified input format:
+ ```
+{"positions": [x_1,y_1,z_1,x_2,y_2,z_2,...,x_n,y_n,z_n], "colors": [r_1,g_1,b_1,a_1,r_2,g_2,b_2,a_2,...,r_n,g_n,b_n,a_n]}}
+```
+#### A toggle box element, when toggled, canvas will render triangle color based on inputfile. When it is not toggled, it will use color based on four RGBA color forementioned.
+
+
+
+
+
 There are five tasks, and you are free to re-use any code from the labs ([lab 1 code](https://www.dropbox.com/s/ht3hwdbd6ra9b42/gl.html?dl=1) and [lab 2 code](https://www.dropbox.com/sh/ydkn3isxt4vkuck/AAAcVd2-3w8T4hq8C_3n7g_Aa?dl=1)).
 
 If you want, you can use the [generate.ipynb](https://github.com/uic-cs425/spring-2021-assignment-0/blob/main/generate.ipynb) Jupyter file to generate your own triangle mesh from an image file:
