@@ -61,3 +61,5 @@ Also, two uniforms are defined: "uColor" and "toggled"
 ![vertex](https://raw.githubusercontent.com/spark299/spring-2021-assignment-0/main/vertex.png)
 
 vertex shader contains conditional that based on the value of toggled, it uses uColor or vColor.
+
+cool
